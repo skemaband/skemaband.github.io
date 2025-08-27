@@ -3,17 +3,24 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Website pertamaku</title>
-  <style>
-    :root{color-scheme: light dark}
-    body{font-family: system-ui, Arial, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 16px; line-height: 1.6}
-    .card{padding:24px;border:1px solid #ddd;border-radius:16px;box-shadow:0 4px 16px rgba(0,0,0,.06)}
-  </style>
+  <title>Beranda — skemaband</title>
+  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="icon" href="/favicon.png">
+  <meta name="description" content="Website sederhana skemaband di GitHub Pages">
 </head>
 <body>
+  <nav>
+    <a class="active" href="/">Beranda</a>
+    <a href="/about.html">About</a>
+    <a href="/contact.html">Contact</a>
+  </nav>
+
   <h1>Halo dunia 🎉</h1>
   <div class="card">
     <p>Hosted gratis di <strong>GitHub Pages</strong>. Mantap!</p>
   </div>
+
+  <footer>© <span id="y"></span> skemaband</footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>

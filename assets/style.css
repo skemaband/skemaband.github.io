@@ -6,3 +6,8 @@ nav a{padding:8px 12px;border-radius:12px;text-decoration:none;border:1px solid 
 nav a.active{font-weight:700;box-shadow:0 4px 16px rgba(0,0,0,.06)}
 .card{padding:24px;border:1px solid #ddd;border-radius:16px;box-shadow:0 4px 16px rgba(0,0,0,.06)}
 footer{margin:40px 0;color:#666;font-size:.9rem}
+.hero{padding:28px 0 8px}
+.hero p{max-width:60ch;margin:8px 0 20px}
+.btn{display:inline-block;padding:10px 14px;border:1px solid #ddd;border-radius:12px;text-decoration:none}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin:24px 0}
+.feature{padding:16px;border:1px solid #ddd;border-radius:16px;box-shadow:0 4px 16px rgba(0,0,0,.06)}

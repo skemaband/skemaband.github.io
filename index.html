@@ -4,14 +4,26 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>skemaband — Beranda</title>
-  <meta name="description" content="Landing skemaband dengan banner slider">
-  <link rel="stylesheet" href="/assets/style.css">
-  <link rel="icon" href="/favicon.png">
+  <meta name="description" content="Landing skemaband dengan banner slider di GitHub Pages">
+  <link rel="icon" href="/favicon.png" />
+  <link rel="stylesheet" href="/assets/style.css" />
 
   <!-- Swiper CSS (CDN) -->
   <link rel="stylesheet" href="https://unpkg.com/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Sedikit polish agar tombol slider rapi meski CSS luar belum diupdate -->
+  <style>
+    .slider{border-radius:18px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.08);margin:8px 0 24px}
+    .swiper-slide{position:relative}
+    .swiper-slide img{width:100%;height:clamp(220px,28vw,460px);object-fit:cover;display:block}
+    .slide-caption{position:absolute;left:20px;bottom:16px;color:#fff;max-width:min(70ch,92%)}
+    .slide-caption h2{margin:0 0 6px}
+    .slide-caption p{margin:0 0 10px}
+    .slide-caption .btn{display:inline-block;margin:8px 8px 0 0;background:#fff;border:1px solid #ddd;border-radius:12px;padding:10px 14px;text-decoration:none}
+  </style>
 </head>
 <body>
+  <!-- NAV -->
   <nav>
     <a class="active" href="/">Beranda</a>
     <a href="/about.html">About</a>
@@ -22,32 +34,38 @@
   <section class="slider">
     <div class="swiper">
       <div class="swiper-wrapper">
+
         <!-- Slide 1 -->
         <div class="swiper-slide">
-          <img src="/assets/slide1.jpg" alt="Slide 1">
+          <img src="assets/slide1.jpg" alt="Slide 1" />
           <div class="slide-caption">
             <h2>Judul Slide 1</h2>
             <p>Deskripsi singkat untuk banner pertama.</p>
             <a class="btn" href="/about.html">Selengkapnya</a>
+            <a class="btn" href="https://t.me/yourchannel" target="_blank" rel="noopener">Telegram</a>
+            <a class="btn" href="https://x.com/yourhandle" target="_blank" rel="noopener">X</a>
           </div>
         </div>
+
         <!-- Slide 2 -->
         <div class="swiper-slide">
-          <img src="/assets/slide2.jpg" alt="Slide 2">
+          <img src="assets/slide2.jpg" alt="Slide 2" />
           <div class="slide-caption">
             <h2>Judul Slide 2</h2>
             <p>Highlight atau pengumuman terbaru.</p>
             <a class="btn" href="/contact.html">Hubungi kami</a>
           </div>
         </div>
+
         <!-- Slide 3 -->
         <div class="swiper-slide">
-          <img src="/assets/slide3.jpg" alt="Slide 3">
+          <img src="assets/slide3.jpg" alt="Slide 3" />
           <div class="slide-caption">
             <h2>Judul Slide 3</h2>
             <p>Teks promosi/agenda singkat.</p>
           </div>
         </div>
+
       </div>
 
       <!-- Kontrol -->
@@ -58,6 +76,7 @@
   </section>
   <!-- ===== SLIDER END ===== -->
 
+  <!-- HERO + FITUR -->
   <section class="hero">
     <h1>skemaband</h1>
     <p>Tempat naruh landing, link penting, dan update proyek—ringan, cepat, gratis di GitHub Pages.</p>
@@ -65,13 +84,22 @@
   </section>
 
   <div class="grid">
-    <div class="feature"><h3>Simple & Cepat</h3><p>Tanpa backend. Cukup HTML/CSS, langsung tayang.</p></div>
-    <div class="feature"><h3>Brandable</h3><p>Bisa custom domain, favicon, dan meta tag.</p></div>
-    <div class="feature"><h3>Future-proof</h3><p>Tambah halaman baru kapan saja.</p></div>
+    <div class="feature">
+      <h3>Simple & Cepat</h3>
+      <p>Tanpa backend. Cukup HTML/CSS, langsung tayang.</p>
+    </div>
+    <div class="feature">
+      <h3>Brandable</h3>
+      <p>Bisa custom domain, favicon, dan meta tag.</p>
+    </div>
+    <div class="feature">
+      <h3>Future-proof</h3>
+      <p>Tambah halaman baru kapan saja.</p>
+    </div>
   </div>
 
   <footer>© <span id="y"></span> skemaband</footer>
-  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
 
   <!-- Swiper JS (CDN) + init -->
   <script src="https://unpkg.com/swiper@11/swiper-bundle.min.js"></script>
